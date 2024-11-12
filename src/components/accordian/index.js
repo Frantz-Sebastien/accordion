@@ -7,7 +7,7 @@ const Accordian = () => {
     const [selected, setSelected] = useState(null)
 
     function handleSingleSelection(getCurrentId){
-        setSelected(getCurrentId)
+        setSelected(getCurrentId === selected ? null : getCurrentId)
     }
     console.log(selected)
 
